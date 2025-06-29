@@ -265,6 +265,26 @@ header {
   color: white;
   cursor: pointer;
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc5a;
+}
+
 
 /* 📱 Estilos responsive para pantallas chicas */
 @media (max-width: 768px) {
