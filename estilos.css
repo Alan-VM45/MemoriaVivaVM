@@ -223,3 +223,83 @@ header {
   margin: 0.5rem 0;
   font-size: 0.95rem;
 }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* 📱 Estilos responsive para pantallas chicas */
+@media (max-width: 768px) {
+  .contenedor-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end; /* Acomoda el botón a la derecha */
+  margin-top: 0.5rem;
+  }
+
+  .nav-principal {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-principal.active {
+    display: block;
+  }
+
+  .nav-principal ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #7aacb3;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .nav-principal ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .principal-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .pasos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paso {
+    width: 100px;
+  }
+
+  .Sobre-nosotros h2,
+  .Contacto h2 {
+    font-size: 1.5rem;
+  }
+
+  .bloque {
+    padding: 0 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
