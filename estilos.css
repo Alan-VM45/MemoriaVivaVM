@@ -137,6 +137,40 @@ header {
   color: #555;
 }
 
+.galeria{
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+}
+.galeria h2{
+  color: #7aacb3;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-homenaje {
+  background-color: #7aacb3; /* azul elegante */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-homenaje:hover {
+  background-color: #ffffff;
+  color: #7aacb3; /* un azul más intenso al pasar el mouse */
+}
+
+
 /* Sobre nosotros */
 .Sobre-nosotros {
   background-color: #f0f5f5;
