@@ -1,0 +1,225 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* opcional: sombrita */
+  padding: 1rem 2rem;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px;
+  font-family: "Oswald", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #7aacb3;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contenedor-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  color: #f9f9f9;
+   font-size: 1.1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-principal .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-principal .nav-link:hover {
+  color: #e0f7fa;
+}
+
+/* Sección Principal */
+.principal {
+  position: relative;
+  text-align: center;
+  background-color: #e6f2f3;
+}
+
+.principal img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.principal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(122, 172, 179, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  max-width: 90%;
+}
+
+.principal-container h2 {
+  font-size: 2rem;
+}
+
+/* Cómo funciona */
+.funcion {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.txt-funcion h3 {
+  color: #7aacb3;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pasos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.paso {
+  width: 150px;
+}
+
+.paso img {
+  width: 100%;
+  aspect-ratio: 1 / 1;       /* Fuerza imagen cuadrada */
+  object-fit: cover;         /* Recorta para que se vea parejo */
+  border-radius: 10px;       /* Opcional: bordes suaves */
+  margin-bottom: 0.5rem;
+}
+
+.paso p {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Sobre nosotros */
+.Sobre-nosotros {
+  background-color: #f0f5f5;
+  padding: 3rem 1rem;
+}
+
+.Sobre-nosotros h2 {
+  color: #7aacb3;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bloque {
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloque h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.bloque p {
+  color: #555;
+}
+
+.intro {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.firma {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Contacto */
+.Contacto {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.Contacto h2 {
+  color: #7aacb3;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-contacto {
+  margin-top: 1rem;
+  color: #444;
+}
+
+.info-contacto a {
+  color: #7aacb3;
+  text-decoration: none;
+}
+
+.info-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #7aacb3;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
