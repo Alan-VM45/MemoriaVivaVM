@@ -17,7 +17,6 @@
 <body>
   <header id="main-header">
     <div class="contenedor-header">
-
       <div class="logo">
         <img src="images/Logo.png" alt="Logo de Memoria Viva">
         <h2 class="nombre"> Memoria Viva</h2>
@@ -26,7 +25,6 @@
         <span id="menu-icon">☰</span>
       </button>
 
-
       <nav class="nav-principal" id="nav-principal">
         <ul>
           <li><a href="#" class="nav-link">Inicio</a></li>
@@ -34,7 +32,6 @@
           <li><a href="#Contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
 
@@ -47,28 +44,23 @@
 
   <section class="funcion">
     <div class="contenedor-funcion">
-
       <div class="txt-funcion">
         <h3>¿Cómo funciona?</h3>
       </div>
-
       <div class="pasos">
         <div class="paso">
           <img src="images/Escanea2.png" alt="Escanear código QR">
           <p>Escaneá</p>
         </div>
-
         <div class="paso">
           <img src="images/homenaje.png" alt="Ver homenaje digital">
           <p>Accedé al homenaje</p>
         </div>
-
         <div class="paso">
           <img src="images/compartir.jpg" alt="Compartir historia">
           <p>Compartí su historia</p>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -83,7 +75,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="Sobre-nosotros" id="Sobre-nosotros">
     <div class="contenedor">
@@ -137,25 +128,49 @@
         </p>
         <p>— Agustín Alejandro Alaniz<br><em>Creador de Memoria Viva</em></p>
       </div>
-
     </div>
-
   </section>
+
   <section class="Contacto" id="Contacto">
     <div class="contenedor">
       <h2>Contacto</h2>
-      <p>¿Querés crear un homenaje digital o tenés alguna duda? Escribinos, estamos para acompañarte.</p>
-    </div>
-    <div class="info-contacto">
-      <p><strong>Email:</strong> memoriaviva.054@gmail.com</p>
-      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/memoriaviva_vm/?hl=es-la"
-          target="_blank">@memoriaviva_vm</a></p>
-      <a href="https://wa.me/5492657775147" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
-        💬 Chatear por WhatsApp
-      </a>
+      <p class="intro-contacto">¿Querés crear un homenaje digital o tenés alguna duda? Escribinos.</p>
 
+      <div class="contacto-grid">
+        <!-- Columna Info -->
+        <div class="info-contacto">
+          <h3>Información</h3>
+          <p>Estamos para acompañarte en este proceso.</p>
+          <div class="datos">
+            <p><strong>Email:</strong> memoriaviva.054@gmail.com</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/memoriaviva_vm/?hl=es-la"
+                target="_blank">@memoriaviva_vm</a></p>
+          </div>
+          <a href="https://wa.me/5492657775147" class="whatsapp-button-static" target="_blank">
+            💬 Chatear por WhatsApp
+          </a>
+        </div>
+
+        <!-- Columna Formulario -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="formulario">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+      </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="contenedor-footer">
       <div class="footer-logo">

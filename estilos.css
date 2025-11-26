@@ -40,7 +40,6 @@ body {
   background-color: var(--accent-color);
   color: var(--text-dark);
   line-height: 1.8;
-  /* Mayor espaciado para elegancia */
 }
 
 h1,
@@ -144,7 +143,6 @@ h6 {
 .principal {
   position: relative;
   height: 85vh;
-  /* Altura más moderna */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,14 +158,12 @@ h6 {
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.85) contrast(1.1);
-  /* Ajuste sutil */
 }
 
 .principal-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 3rem 4rem;
   border-radius: 2px;
-  /* Bordes sutiles */
   text-align: center;
   max-width: 800px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
@@ -214,7 +210,6 @@ h6 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-  /* Círculos románticos */
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -265,7 +260,6 @@ h6 {
   padding: 1rem 2.5rem;
   text-decoration: none;
   border-radius: 50px;
-  /* Pill shape */
   font-size: 1.1rem;
   font-family: var(--font-body);
   font-weight: 700;
@@ -333,34 +327,138 @@ h6 {
 /* Contacto */
 .Contacto {
   background-color: var(--accent-color);
-  padding: 5rem 1rem;
-  text-align: center;
+  padding: 6rem 1rem;
 }
 
 .Contacto h2 {
+  text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.info-contacto {
-  margin-top: 2rem;
+.intro-contacto {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 3rem;
   font-size: 1.1rem;
 }
 
-.info-contacto p {
-  margin: 0.5rem 0;
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
 }
 
-.info-contacto a {
+/* Columna Info */
+.info-contacto h3 {
+  font-size: 1.8rem;
   color: var(--primary-dark);
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.2s;
+  margin-bottom: 1rem;
 }
 
-.info-contacto a:hover {
+.info-contacto p {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.datos p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.datos strong {
   color: var(--primary-color);
+}
+
+.datos a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.datos a:hover {
+  color: var(--primary-color);
+}
+
+.whatsapp-button-static {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button-static:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Formulario */
+.formulario {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow-soft);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: #fcfcfc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(107, 144, 128, 0.1);
+  background-color: white;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 /* Footer */
@@ -369,13 +467,13 @@ h6 {
   color: var(--white);
   padding: 3rem 1rem;
   text-align: center;
+  margin-top: 0;
 }
 
 .footer-logo img {
   height: 60px;
   margin-bottom: 1.5rem;
   filter: brightness(0) invert(1);
-  /* Logo blanco */
   opacity: 0.9;
 }
 
@@ -447,7 +545,6 @@ h6 {
 
   .nav-principal.active {
     max-height: 300px;
-    /* Altura suficiente para el menú */
   }
 
   .nav-principal ul {
@@ -468,7 +565,6 @@ h6 {
 
   .nav-principal .nav-link::after {
     display: none;
-    /* Sin subrayado animado en móvil */
   }
 
   .principal-container {
@@ -492,5 +588,15 @@ h6 {
   .Sobre-nosotros h2,
   .Contacto h2 {
     font-size: 2rem;
+  }
+
+  /* Responsive Contacto */
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .info-contacto {
+    text-align: center;
   }
 }
